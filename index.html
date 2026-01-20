@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High and Low</title>
+    <link rel="stylesheet" href="desigh.css">
+    <!-- <script type="text/javascript" src="modules/lodash.min.js"></script>
+    <script type="text/javascript" src="modules/test-boilerplate.js"></script> -->
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>High and Low</h1>
+        <p>数値の大小を見極めろ</p>
+    </header>
+
+    <div id="haveMoney">
+        持ち金表示
+    </div>
+
+    <div id="inputArea">
+        <div>
+            <input type="text" name="stake" id="stake">
+        </div>
+<!-- High And Low選択 -->
+        <div>
+            <label for="high"></label><input type="radio" id="high" name="select" value="high" required> High</label>
+            <label for="low"></label><input type="radio" id="low" name="select" value=""> Low</label>
+        </div>
+<!-- 開始 削除ボタン -->
+        <div>
+            <button onclick="gameStart()" id="startButton" type="submit">start</button>
+            <button onclick="stakeDelete()" id="deleteButton">delete</button>
+        </div>
+
+        <div id="money">残高表示 何か変数入れる？</div>
+    </div>
+
+    <div id="cardName">
+        <div id="player">player</div>
+        <div id="dealer">dealer</div>
+    </div>
+
+    <div id="cardArea">
+        <div id="myCard">
+            <span id="aboveMarkMy">♠</span>
+            <span id="centerMarkMy">
+                <p id="myCardNum"></p>
+            </span>
+            <span id="belowMarkMy">♠</span>
+        </div>
+
+        <div id="dealersCard">
+            <span id="aboveMarkDealer">♡</span>
+            <span id="centerMarkDealer">
+                <p id="dealerCardNum"></p>
+            </span>
+            <span id="belowMarkDealer">♡</span>
+        </div>
+    </div>
+
+    <div id="resultArea">
+        <h2>結果</h2>
+        <div id="result"></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
