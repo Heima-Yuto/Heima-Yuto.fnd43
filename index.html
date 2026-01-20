@@ -2,89 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High and Low</title>
-  <link rel="stylesheet" href="desigh.css">
-  <!-- <script type="text/javascript" src="modules/lodash.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High and Low</title>
+    <link rel="stylesheet" href="desigh.css">
+    <!-- <script type="text/javascript" src="modules/lodash.min.js"></script>
     <script type="text/javascript" src="modules/test-boilerplate.js"></script> -->
 </head>
 
 <body>
 
-  <header id="header" class="header">
-    <h1>High and Low</h1>
-    <p>数値の大小を見極めろ</p>
-  </header>
+    <header id="header" class="header">
+        <h1>High and Low</h1>
+        <p>数値の大小を見極めろ</p>
+    </header>
 
-  <div class="header">
-    所持金：<span id="haveMoney">100</span>
-  </div>
-
-  <div id="inputArea" class="header">
-    <div>
-      <input type="text" name="stake" id="stake">
+    <div class="header" id="haveMoneyTitle">
+        所持金：<span id="haveMoney">100</span>
     </div>
-    <!-- 開始 削除ボタン -->
-    <div>
-      <button onclick="gameStartFirst()" id="startButton" type="submit">start</button>
-      <button onclick="stakeDelete()" id="deleteButton">delete</button>
-    </div>
+        <div id="inputArea" class="header">
+            <div>
+                <input type="text" name="stake" id="stake" placeholder="掛け金を入力してください" required>
+            </div>
+            <!-- 開始 削除ボタン -->
+            <div class="startDelete">
+                <button onclick="gameStartFirst()" id="startButton" type="submit" >start</button>
+                <button onclick="stakeDelete()" id="deleteButton">delete</button>
+            </div>
 
-    <!-- <div id="money">残高表示 何か変数入れる？</div> -->
-  </div>
-
-  <div class="gameArea">
-    <div id="cardName">
-    </div>
-
-    <div id="cardArea">
-
-      <div>
-        <div id="player">player</div>
-        <div id="myCard" class="hoge">
-          <span id="aboveMarkMy">♠</span>
-          <span id="centerMarkMy">
-            <p id="myCardNum"></p>
-          </span>
-          <span id="belowMarkMy">♠</span>
+            <!-- <div id="money">残高表示 何か変数入れる？</div> -->
         </div>
-      </div>
 
-      <!-- High And Low選択 -->
-      <div id="popup" class="highLowSelect">
-        <label for="high"><input type="radio" id="high" name="select" value="high" required> High</label>
-        <label for="low"><input type="radio" id="low" name="select" value="low"> Low</label>
-      </div>
-
-      <div class="highLowSelect">
-        <button onclick="gameStartSecond()">勝負開始</button>
-      </div>
-
-      <div>
-        <div id="dealer">dealer</div>
-        <div id="dealersCard" class="hoge">
-          <span id="aboveMarkDealer">♥</span>
-          <span id="centerMarkDealer">
-            <p id="dealerCardNum"></p>
-          </span>
-          <span id="belowMarkDealer">♥</span>
+    <div class="gameArea">
+        <div id="cardName">
         </div>
-      </div>
 
-    </div>
+        <div id="cardArea">
 
-    <div id="resultArea">
-      <h3>結果</h3>
-      <h2 id="result"></h2>
-      <button onclick="endOfGame()" id="endButton">END</button>
-    </div>
+            <div>
+                <div id="player">player</div>
+                <div id="myCard" class="hoge">
+                    <span id="aboveMarkMy">♠</span>
+                    <span id="centerMarkMy">
+                        <p id="myCardNum"></p>
+                    </span>
+                    <span id="belowMarkMy">♠</span>
+                </div>
+            </div>
 
-    <div>
-      <button onclick="addMoney100()" id="money100">100コイン</button>
-    </div>
+            <!-- High And Low選択 -->
+            <div id="popup" class="highLowSelect" aria-required="true">
+                <label for="high"><input type="radio" id="high" name="select" value="high" checked> High</label>
+                <label for="low"><input type="radio" id="low" name="select" value="low"> Low</label>
+            </div>
 
-    <script type="text/javascript" src="script.js"></script>
+            <div class="highLowSelect">
+                <button onclick="gameStartSecond()" id="gameStartSecond">勝負開始</button>
+            </div>
+
+            <div>
+                <div id="dealer">dealer</div>
+                <div id="dealersCard" class="hoge">
+                    <span id="aboveMarkDealer">♥</span>
+                    <span id="centerMarkDealer">
+                        <p id="dealerCardNum"></p>
+                    </span>
+                    <span id="belowMarkDealer">♥</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="resultArea">
+            <h3>結果</h3>
+            <h2 id="result"></h2>
+            <button onclick="endOfGame()" id="endButton">もう一回</button>
+        </div>
+
+        <div>
+            <button onclick="addMoney100()" id="money100">100コイン</button>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
 
 </body>
 
