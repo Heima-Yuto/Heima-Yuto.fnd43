@@ -1,0 +1,110 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(163, 248, 220);
+}
+
+#header {
+  padding: 20pt;
+  text-align: center;
+  background-color: rgb(241, 193, 71);
+  height: 100px;
+}
+
+#haveMoney {
+  text-align: left;
+  background-color: rgb(241, 193, 71);
+}
+
+#inputArea {
+  text-align: center;
+  background-color: rgb(241, 193, 71);
+}
+
+/*結果*/
+#resultArea {
+  text-align: center;
+  background-color: rgb(241, 193, 71);
+  color: black;
+}
+
+#result {
+  font-size: smaller;
+}
+
+/*トランプエリア*/
+#cardArea {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cardName {
+  display: flex;
+  justify-content: space-around;
+}
+
+#player {
+  background-color: rgb(241, 193, 71);
+}
+
+#dealer {
+  background-color: rgb(241, 193, 71);
+}
+
+
+/*トランプ-自分*/
+#myCard {
+  height: 178px;
+  width: 126px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+#aboveMarkMy {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerMarkMy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+#belowMarkMy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*トランプ-ディーラー*/
+#dealersCard {
+  height: 178px;
+  width: 126px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+#aboveMarkDealer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerMarkDealer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+#belowMarkDealer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
