@@ -8,16 +8,19 @@ body {
   text-align: center;
   background-color: rgb(241, 193, 71);
   height: 100px;
+  border-radius: 10px;
 }
 
 #haveMoney {
   text-align: left;
-  background-color: rgb(241, 193, 71);
+
 }
 
 #inputArea {
   text-align: center;
   background-color: rgb(241, 193, 71);
+  border-radius: 10px;
+
 }
 
 /*結果*/
@@ -25,6 +28,8 @@ body {
   text-align: center;
   background-color: rgb(241, 193, 71);
   color: black;
+  border-radius: 10px;
+
 }
 
 #result {
@@ -37,18 +42,23 @@ body {
   justify-content: space-around;
 }
 
-#cardName {
+#player {
   display: flex;
   justify-content: space-around;
-}
-
-#player {
+  border-radius: 10px;
   background-color: rgb(241, 193, 71);
+
 }
 
 #dealer {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
   background-color: rgb(241, 193, 71);
+
 }
+
+
 
 
 /*トランプ-自分*/
@@ -64,6 +74,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: x-large;
 }
 
 #centerMarkMy {
@@ -72,13 +83,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+  font-size: xxx-large;
 }
 
 #belowMarkMy {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: x-large;
 }
+
+
 
 /*トランプ-ディーラー*/
 #dealersCard {
@@ -93,6 +108,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: x-large;
+  color: red;
+
 }
 
 #centerMarkDealer {
@@ -100,11 +118,24 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: red;
+  font-size: xxx-large;
 }
 
 #belowMarkDealer {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: x-large;
+  color: red;
+}
+
+
+
+.gameArea {
+  visibility: hidden;
+}
+
+.highLowSelect {
+  flex-direction: column;
 }
