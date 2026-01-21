@@ -92,6 +92,7 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   font-size: xxx-large;
+  animation: my 5s ease-in 0 0 normal forwards;
 }
 
 #belowMarkMy {
@@ -101,6 +102,14 @@ body {
   font-size: x-large;
 }
 
+@keyframes my {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 /*トランプ-ディーラー*/
@@ -128,6 +137,7 @@ body {
   transform: translate(-50%, -50%);
   color: red;
   font-size: xxx-large;
+  animation: name 1s ease-in 0 0 normal forwards;
 }
 
 #belowMarkDealer {
@@ -162,7 +172,15 @@ body {
 #endButton {
   font-size: large;
   font-family: cursive;
+  background-color: deepskyblue;
 }
+
+#endButton2 {
+  font-size: large;
+  font-family: cursive;
+  background-color: aquamarine;
+}
+
 
 #startButton {
   font-size: x-large;
